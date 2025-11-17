@@ -3,8 +3,12 @@ import React, { useState } from 'react';
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+    const closeMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     return (
-        <div>
+        <>
             {/* 1st */}
             <div className='hidden lg:flex relative justify-between bg-[#F6F6F6] px-[120px]'>
                 {/* logo */}
@@ -18,10 +22,10 @@ const Navbar = () => {
 
                 {/* nav */}
                 <div className='flex gap-px text-white font-semibold z-9'>
-                    <a href="#" className='px-[34px] py-[5px] bg-[#B8B8B8] hover:bg-amber-500 rounded-bl-md uppercase'>Wholesale</a>
-                    <a href="#" className='px-[34px] py-[5px] bg-[#B8B8B8] hover:bg-amber-500 uppercase'>Recipes</a>
-                    <a href="#" className='px-[34px] py-[5px] bg-[#B8B8B8] hover:bg-amber-500 uppercase'>Blog</a>
-                    <a href="#" className='px-[34px] py-[5px] bg-[#B8B8B8] hover:bg-amber-500 rounded-br-md uppercase'>FAQ</a>
+                    <a href="wholesale" className='px-[34px] py-[5px] bg-[#B8B8B8] hover:bg-amber-500 rounded-bl-md uppercase'>Wholesale</a>
+                    <a href="recipes" className='px-[34px] py-[5px] bg-[#B8B8B8] hover:bg-amber-500 uppercase'>Recipes</a>
+                    <a href="blog" className='px-[34px] py-[5px] bg-[#B8B8B8] hover:bg-amber-500 uppercase'>Blog</a>
+                    <a href="faq" className='px-[34px] py-[5px] bg-[#B8B8B8] hover:bg-amber-500 rounded-br-md uppercase'>FAQ</a>
                 </div>
             </div>
 
@@ -46,8 +50,7 @@ const Navbar = () => {
                     
                     {/* sign in */}
                     <div className='text-[#7E7E7E] cursor-pointer'>
-                        <img src="/signIn.png" alt="sign-in" className='inline-block mr-2'/>
-                        Sign in
+                        <img src="/signIn.png" alt="sign-in" className='inline-block mr-2'/> Sign in
                     </div>
                 </div>
             </div>
@@ -64,7 +67,7 @@ const Navbar = () => {
 
                     {/* pop-up button */}
                     <button 
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        onClick={closeMenu}
                         className='text-gray-600 focus:outline-none'
                     >
                         {isMobileMenuOpen ? (
@@ -84,19 +87,19 @@ const Navbar = () => {
                         </div>
 
                         <div className='flex flex-col gap-4 text-gray-700 font-bold text-sm uppercase'>
-                            <a href="#" className='hover:text-amber-500'>belgian pearl sugar</a>
-                            <a href="#" className='hover:text-amber-500'>liege waffle mix</a>
-                            <a href="#" className='hover:text-amber-500'>liege waffle maker</a>
-                            <a href="#" className='hover:text-amber-500'>speciality ingredients</a>
+                            <a onClick={closeMenu} href="belgian-pearl-sugar" className='hover:text-amber-500'>belgian pearl sugar</a>
+                            <a onClick={closeMenu} href="liege-waffle-mix" className='hover:text-amber-500'>liege waffle mix</a>
+                            <a onClick={closeMenu} href="liege-waffle-maker" className='hover:text-amber-500'>liege waffle maker</a>
+                            <a onClick={closeMenu} href="speciality-ingredients" className='hover:text-amber-500'>speciality ingredients</a>
                         </div>
                         
                         <hr className='border-gray-100' />
 
                         <div className='flex flex-wrap gap-3 text-xs font-semibold text-white'>
-                             <a href="#" className='px-4 py-2 bg-[#B8B8B8] rounded-md'>Wholesale</a>
-                             <a href="#" className='px-4 py-2 bg-[#B8B8B8] rounded-md'>Recipes</a>
-                             <a href="#" className='px-4 py-2 bg-[#B8B8B8] rounded-md'>Blog</a>
-                             <a href="#" className='px-4 py-2 bg-[#B8B8B8] rounded-md'>FAQ</a>
+                            <a onClick={closeMenu} href="wholesale" className='px-4 py-2 bg-[#B8B8B8] rounded-md'>Wholesale</a>
+                            <a onClick={closeMenu} href="recipes" className='px-4 py-2 bg-[#B8B8B8] rounded-md'>Recipes</a>
+                            <a onClick={closeMenu} href="blog" className='px-4 py-2 bg-[#B8B8B8] rounded-md'>Blog</a>
+                            <a onClick={closeMenu} href="faq" className='px-4 py-2 bg-[#B8B8B8] rounded-md'>FAQ</a>
                         </div>
 
                         {/* Sign In & Basket */}
@@ -111,7 +114,7 @@ const Navbar = () => {
                     </div>
                 )}
             </div>
-        </div>
+        </>
     );
 };
 
