@@ -9,4 +9,7 @@
 
 @theme {
     --breakpoint-xl: 1600px;
-  }
+    --breakpoint-slider-response: 1920px;
+    --breakpoint-slider-sm: 935px;
+    --breakpoint-slider-img-sm: 710px;
+}
