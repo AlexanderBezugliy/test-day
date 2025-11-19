@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import HeroSlider from './components/HeroSlider'
 import HeroSection from './components/HeroSection'
+import ProductCards from './components/ProductCards'
+
 
 const App = () => {
     return (
@@ -9,8 +10,10 @@ const App = () => {
             <Navbar />
 
             <div>
-                {/* <HeroSlider /> */}
                 <HeroSection />
+                <ProductCards />
+
+                
             </div>
         </>
     )

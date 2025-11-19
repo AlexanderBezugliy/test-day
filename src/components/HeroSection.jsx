@@ -1,37 +1,9 @@
 import React, { useState } from 'react'
+import { slides } from '../assets/script';
 
 const HeroSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    const slides = [
-        {
-            id: 0,
-            left: "/hero-left.png",   
-            right: "/hero-right.png",
-            title: 'PEARL SUGAR'
-        },
-        {
-            id: 1,
-            left: "/hero-left2.png",   
-            right: "/hero2-right@2x.png",
-            title: 'WAFFLE MAKER'
-        },
-        {
-            id: 2,
-            left: "/hero-left.png",   
-            right: "/hero-right.png",
-            title: 'PEARL SUGAR'
-        },
-        {
-            id: 3,
-            left: "/hero-left2.png",   
-            right: "/hero2-right@2x.png",
-            title: 'WAFFLE MAKER'
-        }
-    ];
-
-
-    // поработать над адаптивностью слайдера (добавить ЛЕВОЙ части серый бэкграунд)
 
     return (
         <div className=' lg:mt-8 xl:mt-[100px] max-w-[1920px] mx-auto flex flex-col slider-response:flex-row items-center slider-response:justify-center bg-gray-100 slider-response:bg-white py-10 slider-response:py-0'>
