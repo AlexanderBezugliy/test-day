@@ -9,7 +9,7 @@ import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 function NextArrow(props) {
     const { onClick } = props;
     return (
-        <div onClick={onClick} className="absolute top-[40%] right-7 cards-sm:-right-12 rounded-full cursor-pointer hover:scale-115 duration-300 z-10">
+        <div onClick={onClick} className="absolute top-[40%] right-7 cards-sm:-right-10 rounded-full cursor-pointer hover:scale-115 duration-300 z-10">
             <IoIosArrowDropright size={40} className="text-gray-400" />
         </div>
     );
@@ -66,8 +66,8 @@ const CardsSlick = () => {
             
             <Slider {...settings}>
                 {cardData.map((card) => (
-                    <div key={card.id} className="px-[9px]">
-                        <div className="relative flex flex-col justify-between shrink-0 max-w-[386px] max-h-[483px] p-[23px] bg-white shadow-lg overflow-hidden" >
+                    <div key={card.id} className="px-[9px] py-[9px]">
+                        <div className="relative flex flex-col justify-between shrink-0 max-w-[386px] h-[483px] p-[23px] bg-white shadow-md" >
                             {/* heart */}
                             <div className="flex justify-end">
                                 <img
