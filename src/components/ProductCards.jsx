@@ -1,12 +1,12 @@
 import React from 'react'
-import Cards from './Cards'
+import CardsSlick from './CardsSlick'
 
 
 
 const ProductCards = () => {
 
     return (
-        <div className='w-full my-[35px] bg-[#F8F8F8]'>
+        <div className='w-full my-[35px] pb-[140px] bg-[#F8F8F8]'>
             <div className='flex pb-[72px]'>
                 <button className='flex-1 py-[11px] uppercase'>
                     Home baker
@@ -16,8 +16,8 @@ const ProductCards = () => {
                 </button>
             </div>
 
-                
-            <Cards />
+            {/* cards */}
+            <CardsSlick />
         </div>
     )
 

@@ -7,9 +7,18 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
 @theme {
     --breakpoint-xl: 1600px;
+
     --breakpoint-slider-response: 1920px;
     --breakpoint-slider-sm: 935px;
     --breakpoint-slider-img-sm: 710px;
+
+    --breakpoint-cards-xl: 1890px;
+    --breakpoint-cards-lg: 1444px;
+    --breakpoint-cards-md: 1200px;
+    --breakpoint-cards-sm: 850px;
+
+    
 }

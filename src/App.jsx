@@ -12,8 +12,9 @@ const App = () => {
             <div>
                 <HeroSection />
                 <ProductCards />
-
                 
+
+
             </div>
         </>
     )
