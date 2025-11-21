@@ -66,8 +66,18 @@ const CardsSlick = () => {
             
             <Slider {...settings}>
                 {cardData.map((card) => (
-                    <div key={card.id} className="px-[9px] py-[9px]">
-                        <div className="relative flex flex-col justify-between shrink-0 max-w-[386px] h-[483px] p-[23px] bg-white shadow-md" >
+                    <div 
+                        key={card.id} 
+                        className="relative px-[9px] py-[9px]"
+                    >
+                        <div className="relative flex flex-col justify-between shrink-0 max-w-[386px] h-[483px] p-[23px] bg-white shadow-md rounded-xl" >
+                            {/* sale % */}
+                            {card.isSale && (
+                                <div className="absolute top-0 left-0">
+                                    <p className="text-white text-[17px] font-semibold bg-[#63B569] py-2 px-4 rounded-br-lg rounded-tl-xl">- {card.saleNumber}</p>
+                                </div>
+                            )}
+                            
                             {/* heart */}
                             <div className="flex justify-end">
                                 <img

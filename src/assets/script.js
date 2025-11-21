@@ -33,6 +33,8 @@ export const cardData = [
     {
       id: 1,
       isFavorite: false,
+      isSale: false,
+      saleNumber: null,
       imageUrl: "/cards/card1.png",
       title: "HVD-A57-Liege-Waffle-Iron",
       model: "model wedceat",
@@ -46,6 +48,8 @@ export const cardData = [
     {
       id: 2,
       isFavorite: false,
+      isSale: true,
+      saleNumber: '25%',
       imageUrl: "/cards/card2.png",
       title: "HVD-A57-Liege-Waffle-Iron",
       model: "model wedceat",
@@ -59,6 +63,8 @@ export const cardData = [
     {
       id: 3,
       isFavorite: false,
+      isSale: false,
+      saleNumber: null,
       imageUrl: "/cards/card3.png",
       title: "HVD-A57-Liege-Waffle-Iron",
       model: "model wedceat",
@@ -72,6 +78,8 @@ export const cardData = [
     {
         id: 4,
         isFavorite: false,
+        isSale: true,
+        saleNumber: '35%',
         imageUrl: "/cards/card4.png",
         title: "HVD-A57-Liege-Waffle-Iron",
         model: "model wedceat",
@@ -85,6 +93,8 @@ export const cardData = [
     {
         id: 5,
         isFavorite: false,
+        isSale: true,
+        saleNumber: '25%',
         imageUrl: "/cards/card4.png",
         title: "HVD-A57-Liege-Waffle-Iron",
         model: "model wedceat",
@@ -98,6 +108,8 @@ export const cardData = [
       {
         id: 6,
         isFavorite: false,
+        isSale: false,
+        saleNumber: null,
         imageUrl: "/cards/card3.png",
         title: "HVD-A57-Liege-Waffle-Iron",
         model: "model wedceat",
@@ -111,6 +123,8 @@ export const cardData = [
       {
         id: 7,
         isFavorite: false,
+        isSale: true,
+        saleNumber: '35%',
         imageUrl: "/cards/card2.png",
         title: "HVD-A57-Liege-Waffle-Iron",
         model: "model wedceat",
@@ -124,6 +138,8 @@ export const cardData = [
       {
           id: 8,
           isFavorite: false,
+          isSale: false,
+          saleNumber: null,
           imageUrl: "/cards/card1.png",
           title: "HVD-A57-Liege-Waffle-Iron",
           model: "model wedceat",
