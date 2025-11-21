@@ -1,6 +1,6 @@
 import React from 'react'
 
-const StarRating = ({ rating = 0, totalReviews }) => {
+const StarRating = ({ rating, totalReviews }) => {
     const stars = "/cards/star.png";
 
     const numberOfStars = Math.round(rating);
@@ -11,7 +11,7 @@ const StarRating = ({ rating = 0, totalReviews }) => {
         return (
             <div className="flex items-center">
                 <span className="ml-2 text-sm text-gray-500">
-                    ({totalReviews || 0})
+                    ({totalReviews || ''})
                 </span>
             </div>
         );
@@ -33,9 +33,11 @@ const StarRating = ({ rating = 0, totalReviews }) => {
             ))}
             
             {/* totalReviews */}
-            <span className="ml-2 text-sm text-gray-500">
-                ({totalReviews})
-            </span>
+            {totalReviews && (
+                <span className="ml-2 text-sm text-gray-500">
+                    ({totalReviews})
+                </span>
+            )}
         </div>
     )
 }

@@ -136,3 +136,31 @@ export const cardData = [
       },
 
 ];
+
+// recipes data
+export const recipesData = [
+    {
+        id: 1,
+        img: "/authentic/card1.png",
+        title: "traditional liege waffle",
+        time: "45 MIN",
+        rating: 5,
+        text: "Try one of our pearl sugar recipe at the comfort of your home. In the kitchen with waffle pantry."
+    },
+    {
+        id: 2,
+        img: "/authentic/card2.png", 
+        title: "brussels waffle",
+        time: "30 MIN",
+        rating: 4,
+        text: "Light and crispy authentic Brussels waffle recipe. Perfect for breakfast or dessert."
+    },
+    {
+        id: 3,
+        img: "/authentic/card3.png", 
+        title: "chocolate waffle",
+        time: "50 MIN",
+        rating: 5,
+        text: "A delicious twist on the classic waffle with rich chocolate flavor inside."
+    }
+]
