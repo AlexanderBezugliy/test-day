@@ -15,9 +15,7 @@ const Authentic = () => {
                 rightTitle="recipes" 
                 subTitle={
                     <>
-                        Try one of our pearl sugar recipe at the comfort of your home. 
-                        <br />
-                        In the kitchen with waffle pantry.
+                        Try one of our pearl sugar recipe at the comfort of your home. <br />In the kitchen with waffle pantry.
                     </>
                 }
             />
@@ -30,34 +28,36 @@ const Authentic = () => {
                         key={recipe.id} 
                         className=' max-w-[350px] authentic-lg:max-w-[472px] authentic-lg:max-h-[525px] shadow-lg rounded-lg overflow-hidden bg-white mb-5'
                     >
-                        <img 
-                            src={recipe.img} 
-                            alt={recipe.title} 
-                            className='w-full object-cover' 
-                        />
-
-                        <div className='relative flex flex-col justify-between items-center px-[45px] text-[#676767] py-7 '>
-                            <StarRating rating={recipe.rating}  />
-                            
+                        {/* <div className='flex flex-col justify-between'> */}
                             <img 
-                                src="/authentic/share-icon.png" 
-                                alt="share" 
-                                className='absolute top-7 right-[18px] object-cover cursor-pointer hover:scale-110 duration-200' 
+                                src={recipe.img} 
+                                alt={recipe.title} 
+                                className='w-full object-cover' 
                             />
 
-                            <h3 className='w-[200px] font-semibold mt-2 uppercase text-center'>
-                                {recipe.title}
-                            </h3>
+                            <div className='relative h-[230px] authentic-lg:h-auto  flex flex-col justify-between items-center px-5 authentic-lg:px-[45px] text-[#676767] py-7 '>
+                                <StarRating rating={recipe.rating}  />
+                                
+                                <img 
+                                    src="/authentic/share-icon.png" 
+                                    alt="share" 
+                                    className='absolute top-7 right-[18px] object-cover cursor-pointer hover:scale-110 duration-200' 
+                                />
 
-                            <div>
-                                <img src="/authentic/time.png" alt="time" className='inline mr-2 my-[12px]' />
-                                {recipe.time}
+                                <h3 className='w-[200px] authentic-lg:w-full font-semibold mt-2 uppercase text-center'>
+                                    {recipe.title}
+                                </h3>
+
+                                <div>
+                                    <img src="/authentic/time.png" alt="time" className='inline mr-2 my-[12px]' />
+                                    {recipe.time}
+                                </div>
+
+                                <p className='text-[15px] text-center'>
+                                    {recipe.text}
+                                </p>
                             </div>
-
-                            <p className='text-[15px] text-center'>
-                                {recipe.text}
-                            </p>
-                        </div>
+                        {/* </div> */}
                     </div> 
                 ))}
                 
