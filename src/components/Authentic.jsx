@@ -21,7 +21,6 @@ const Authentic = () => {
             />
 
             {/* cards */}
-            {/* <div className='flex justify-around authentic-xl:justify-between mb-10'> */}
             <div className='grid grid-cols-1 authentic-sm:grid-cols-2 authentic-md:grid-cols-3 justify-items-center gap-0 authentic-xl:gap-30 mb-10'> 
                 {recipesData.map((recipe) => (
                     <div 
@@ -49,11 +48,11 @@ const Authentic = () => {
                                 </h3>
 
                                 <div>
-                                    <img src="/authentic/time.png" alt="time" className='inline mr-2 my-[12px]' />
+                                    <img src="/authentic/time.png" alt="time" className='inline mr-2 my-3' />
                                     {recipe.time}
                                 </div>
 
-                                <p className='text-[15px] text-center'>
+                                <p className='text-[15px] text-center pb-4'>
                                     {recipe.text}
                                 </p>
                             </div>
