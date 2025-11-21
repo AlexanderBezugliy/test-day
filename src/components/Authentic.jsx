@@ -35,7 +35,7 @@ const Authentic = () => {
                                 className='w-full object-cover' 
                             />
 
-                            <div className='relative h-[230px] authentic-lg:h-auto  flex flex-col justify-between items-center px-5 authentic-lg:px-[45px] text-[#676767] py-7 '>
+                            <div className='relative h-[230px] authentic-lg  flex flex-col justify-between items-center px-5 authentic-lg:px-[45px] text-[#676767] py-7 '>
                                 <StarRating rating={recipe.rating}  />
                                 
                                 <img 

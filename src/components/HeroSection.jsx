@@ -6,7 +6,7 @@ const HeroSection = () => {
 
 
     return (
-        <div className=' lg:mt-8 xl:mt-[100px] max-w-[1920px] mx-auto flex flex-col slider-response:flex-row items-center slider-response:justify-center bg-gray-100 slider-response:bg-white py-10 slider-response:py-0'>
+        <div className='lg:mt-8 xl:mt-[100px] max-w-[1920px] mx-auto flex flex-col slider-response:flex-row items-center slider-response:justify-center bg-gray-100 slider-response:bg-white py-10 slider-response:py-0'>
             {/* left */}
             <div className='flex-1 slider-sm:-mr-18 z-10'>
                 <img 
