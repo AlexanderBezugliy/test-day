@@ -26,6 +26,7 @@
     --breakpoint-authentic-sm: 780px;
 
     --breakpoint-b-slider-xl: 1615px;
-
-    
+    --breakpoint-b-slider-lg: 838px;
+    --breakpoint-b-slider-md: 648px;
+    --breakpoint-b-slider-sm: 460px;
 }
